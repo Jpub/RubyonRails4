@@ -1,0 +1,12 @@
+<%= link_to '지원 사이트', 'http://www.wings.msn.to/' %><br />
+
+<%= link_to 'Top', { controller: :hello, action: :index },
+  id: :link, class: :menu %><br />
+
+<%= link_to '제거', book_path(1),
+  { method: :delete, data: { confirm: '제거해도 괜찮습니까?'} } %><br />
+
+<% @book = Book.find(1) %>
+<%= link_to book_path(@book) do
+  image_tag "http://www.wings.msn.to/books/#{@book.isbn}/#{@book.isbn}.jpg"
+end %>

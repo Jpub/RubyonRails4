@@ -1,0 +1,5 @@
+현재 시간(캐시 미사용): <%= Time.now %><br />
+<% cache do %>
+<%# cache(suffix: 'footer') do %>
+현재 시간(캐시 사용): <%= Time.now %><br />
+<% end %>

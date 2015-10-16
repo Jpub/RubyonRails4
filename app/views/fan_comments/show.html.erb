@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Author no:</strong>
+  <%= @fan_comment.author_no %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @fan_comment.name %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @fan_comment.body %>
+</p>
+
+<p>
+  <strong>Deleted:</strong>
+  <%= @fan_comment.deleted %>
+</p>
+
+<%= link_to 'Edit', edit_fan_comment_path(@fan_comment) %> |
+<%= link_to 'Back', fan_comments_path %>

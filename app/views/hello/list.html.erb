@@ -1,0 +1,43 @@
+<table border="1">
+  <tr>
+    <th>ISBN 코드</th><th>이름</th><th>가격</th>
+    <th>출판사</th><th>출간일</th><th>CD-ROM</th>
+  </tr>
+
+<% @books.each do |book| %>
+  <tr>
+<%
+=begin
+%>
+  <tr style="background-color:<%= cycle('#FFffFF', '#FFff99') %>">
+<%
+=end
+%>
+    <td><%= book.isbn %></td>
+    <td><%= book.title %></td>
+
+<%
+=begin
+%>
+    <td style="background-color:<%= cycle('#FFffFF', '#FFff99') %>">
+      <%= book.isbn %></td>
+    <td style="background-color:<%= current_cycle %>">
+      <%= book.title %></td>
+<%
+=end
+%>
+    <td><%= book.price %>원</td>
+    <td><%= book.publish %></td>
+    <td><%= book.published %></td>
+    <td><%= book.cd %></td>
+  </tr>
+<% end %>
+</table>
+<%
+=begin
+%>
+<%= debug(@books) %>
+<%= @books.inspect %>
+<%
+=end
+%>

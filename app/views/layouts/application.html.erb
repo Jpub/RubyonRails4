@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Railbook</title>
+  <!--<title><%= @title ? @title : 'Rails 입문' %></title>-->
+<%#= auto_discovery_link_tag(:rss,
+  { controller: :books, action: :index, id: :rails },
+  title: '서버사이드 배움터 WINGS'
+) %>
+<%#= favicon_link_tag %>
+<%#= favicon_link_tag 'favicon.ico' %>
+<%#= favicon_link_tag 'fav-icon.png', type: 'image/png' %>
+
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+<%#= content_for?(:content) ? yield(:content) : yield %> 
+
+</body>
+</html>

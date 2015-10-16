@@ -1,0 +1,52 @@
+<%= form_for(@book) do |f| %>
+  <% if @book.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@book.errors.count, "error") %> prohibited this book from being saved:</h2>
+
+      <ul>
+      <% @book.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :isbn %><br>
+<%
+=begin %>
+    <%= f.label :isbn, 'ISBN 코드' %><br>
+<%
+=end %>
+    <%= f.text_field :isbn %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.number_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :publish %><br>
+    <%= f.text_field :publish %>
+  </div>
+  <div class="field">
+    <%= f.label :published %><br>
+    <%= f.date_select :published %>
+  </div>
+  <div class="field">
+    <%= f.label :cd %><br>
+    <%= f.check_box :cd %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+<%
+=begin %>
+    <%= f.submit '저장', data: { confirm: '저장しても良いですか？',
+      disable_with: '処理中...' } %>
+<%
+=end %>
+  </div>
+<% end %>

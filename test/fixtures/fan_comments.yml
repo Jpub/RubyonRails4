@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  author_no: 1
+  name: 윤명월
+  body: 친절하게 설명해줘서 좋았어요!
+  deleted: true
+
+two:
+  author_no: 1
+  name: 남기주
+  body: 기초부터 차근차근 알려주는 책인 것 같아요.
+  deleted: false
+
+three:
+  author_no: 2
+  name: 연하진
+  body: 서로 대화하는듯한 설명이 마음에 들었어요.
+  deleted: false

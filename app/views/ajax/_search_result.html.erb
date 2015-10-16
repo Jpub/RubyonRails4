@@ -1,0 +1,6 @@
+<ul>
+<% @books.each do |book| %>
+  <li><%= link_to book.title,
+    'http://www.wings.msn.to/index.php/-/A-03/' + book.isbn %></li>
+<% end %>
+</ul>

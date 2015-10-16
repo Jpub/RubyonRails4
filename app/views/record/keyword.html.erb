@@ -1,0 +1,11 @@
+<%= form_tag action: :ph1 do %>
+  <div class="field">
+    <%= label_tag :publish, '출판사: '  %><br />
+    <%= text_field_tag :publish %>
+  </div>
+  <div class="field">
+    <%= label_tag :price, '최저 가격: '  %><br />
+    <%= text_field_tag :price %>
+  </div>
+  <%= submit_tag '검색' %>
+<% end %>

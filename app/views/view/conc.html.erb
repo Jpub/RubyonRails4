@@ -1,0 +1,32 @@
+<table border="1">
+  <tr>
+    <th>ISBN 코드</th><th>이름</th><th>가격</th>
+    <th>출판사</th><th>출간일</th><th>CD-ROM</th>
+  </tr>
+
+<% @books.each do |book| %>
+  <tr>
+    <td><%= book.isbn %></td>
+    <td><%= book.title %></td>
+    <td><%= book.price %>원
+      <% if book.price >= 30000
+        concat image_tag 'expensive.gif'
+      end %>
+    </td>
+<%
+=begin
+%>
+    <td><%= book.price %>원
+      <% if book.price >= 3000 %>
+      <%= image_tag 'expensive.gif' %>
+    <% end %>
+    </td>
+<%
+=end
+%>
+    <td><%= book.publish %></td>
+    <td><%= book.published %></td>
+    <td><%= book.cd %></td>
+  </tr>
+<% end %>
+</table>

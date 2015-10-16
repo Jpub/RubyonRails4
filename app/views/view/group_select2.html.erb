@@ -1,0 +1,3 @@
+<%= select_tag 'book',
+  option_groups_from_collection_for_select(
+    @authors, :books, :name, :id, :title, '1') %>

@@ -1,0 +1,21 @@
+<%= number_to_currency(12345) %><br />
+
+<%= number_to_currency(12345, unit: '원', precision: 0, format: '%n%u') %><br />
+
+<%= number_to_human(1234567) %><br />
+
+<%= number_to_human(1234567, units: { unit: "", million: "백만" }) %><br />
+
+<%= number_to_human_size(123456) %><br />
+
+<%= number_to_percentage(12.3456) %><br />
+
+<%= number_with_delimiter(1234567.89, delimiter: " ", separator: ",") %> <br />
+
+<%= number_with_precision(123.4567) %><br />
+
+<%= number_with_precision(123.4567, precision: 5) %><br />
+
+<%= number_with_precision(123.4567, precision: 5, significant: true) %><br />
+
+<%= number_with_precision(123.4, precision: 5, strip_insignificant_zeros: true) %>

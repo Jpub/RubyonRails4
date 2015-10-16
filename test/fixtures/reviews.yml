@@ -1,0 +1,56 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+modernjava_1:
+  id: 1
+  book_id: 1
+  user_id: 2
+  body: Android 개발을 할 것이라면 꼭 읽었으면 좋겠어요!
+
+modernjava_2:
+  id: 2
+  book_id: 1
+  user_id: 3
+  body: Java 기본을 다시 살펴보고 싶을 때마다 펴보고 있는 책이에요.
+
+jslib_1:
+  id: 3
+  book_id: 2
+  user_id: 2
+  body: 굉장히 유용합니다. 다양한 라이브러리를 소개해줍니다.
+
+jslib_2:
+  id: 4
+  book_id: 2
+  user_id: 4
+  body: 친절한 설명에 예제도 많아서 좋습니다.
+
+jslib_3:
+  id: 5
+  book_id: 2
+  user_id: 5
+  body: 초보자에게는 조금 어려울 수 있을 것 같습니다.
+
+rails_1:
+  id: 6
+  book_id: 3
+  user_id: 1
+  body: 그림과 예제가 많아서 초보자인 저도 쉽게 이해할 수 있었어요!
+
+rails_2:
+  id: 7
+  book_id: 3
+  user_id: 1
+  body: 내용이 좋습니다.
+
+sql:
+  id: 8
+  book_id: 4
+  user_id: 5
+  body: 데이터베이스를 처음 공부해서 조금 어려웠지만 이제 잘 사용할 수 있을 것 같아요!
+
+android:
+  id: 9
+  book_id: 5
+  user_id: 3
+  body: 기초부터 응용까지 모두 다루어주고 있습니다. 이 책 한 권으로도 안드로이드 개발을 끝낼 수 있을 것 같아요.
+

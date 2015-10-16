@@ -1,0 +1,27 @@
+<%= t 'general.greeting.morning' %><br />
+<%= t 'general.greeting.hello', name: 'arint' %><br />
+
+<%
+=begin
+%>
+
+<%= l Time.now, format: :long %><br />
+<%= number_to_currency(12345) %><br />
+<%= t :morning, scope: 'general.greeting' %><br />
+
+<%= t :morning, scope: [:general, :greeting] %><br />
+<% k = [:general, :greeting] %>
+<%= t :morning, scope: k %><br />
+
+<%= t 'general.greeting.night', default: 'Good Night' %><br />
+
+<%= t :night, default: [:default, 'Hello'],
+  scope: [:general, :greeting] %><br />
+<%= t 'general.greeting.morning', locale: 'de' %><br />
+
+<%= t 'result', count: 1 %><br />
+<%= t 'result', count: 2 %><br />
+
+<%
+=end
+%>

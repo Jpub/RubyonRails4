@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+modernjava:
+  book_id: 1
+  author_id: 1
+
+jslib:
+  book_id: 2
+  author_id: 1
+
+jslib_2:
+  book_id: 2
+  author_id: 2
+
+rails:
+  book_id: 3
+  author_id: 2
+
+sql:
+  book_id: 4
+  author_id: 2
+
+android:
+  book_id: 5
+  author_id: 1
+
+php:
+  book_id: 6
+  author_id: 3
+
+html:
+  book_id: 7
+  author_id: 3
+
+refhtml:
+  book_id: 8
+  author_id: 1
+
+servlet:
+  book_id: 9
+  author_id: 1
+
+iphone:
+  book_id: 10
+  author_id: 3

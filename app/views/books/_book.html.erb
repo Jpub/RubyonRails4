@@ -1,0 +1,44 @@
+<p>
+<img src="http://www.wings.msn.to/books/<%= @book.isbn%>/<%= @book.isbn%>_logo.jpg" width="80" height="30" /><br />
+<%= @book.title %><br />
+<%= @book.publish %><br />
+가격 <%= @book.price %>원<br />
+ISBN <%= @book.isbn %><br />
+출간일: <%= @book.published %>
+</p>
+
+
+<%
+=begin
+%>
+<p>
+<% type = :details if type.nil? %>
+<% if type == :details %>
+<img src="http://www.wings.msn.to/books/<%= book.isbn%>/<%= book.isbn%>_logo.jpg" width="80" height="30" /><br />
+<% end %>
+<%= book.title %><br />
+<%= book.publish %><br />
+가격 <%= book.price %>원<br />
+ISBN <%= book.isbn %><br />
+출간일: <%= book.published %>
+</p>
+<%
+=end
+%>
+
+<%
+=begin
+%>
+<%# cache(book) do %>
+<% cache_if(book.published <= Date.today ,book) do %>
+<img src="http://www.wings.msn.to/books/<%= book.isbn%>/<%= book.isbn%>_logo.jpg" width="80" height="30" /><br />
+<%= book.title %><br />
+<%= book.publish %><br />
+가격 <%= book.price %>원<br />
+ISBN <%= book.isbn %><br />
+출간일: <%= book.published %><br />
+리뷰：<ul><%= render book.reviews %></ul>
+<% end %>
+<%
+=end
+%>

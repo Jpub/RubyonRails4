@@ -1,0 +1,61 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+arint:
+  id: 1
+  username: arint
+  password: 2cf00a11121ad260ed32b290f9aefa01279bd5a2
+  salt: 5f90a188468f64998c5a
+  email: testA@test.com
+  dm: true
+  roles: admin,manager
+  reviews_count: 2
+
+hasat:
+  id: 2
+  username: hasat
+  password: 9be7f45387af4f7bbe720d16a6f334503b5c4f81
+  salt: 5f90a188468f64998c5b
+  email: testD@test.com
+  dm: false
+  roles: admin
+  reviews_count: 2
+
+hiana:
+  id: 3
+  username: hiana
+  password: 6cc09597819748465c6a2603a6f7a52d51eb01ef
+  salt: 5f90a188468f64998c5c
+  email: testE@test.com
+  dm: true
+  roles: manager
+  reviews_count: 2
+
+rant:
+  id: 4
+  username: rant
+  password: 06780c9b144eaf8dc0c8c6ded18afb032cac9b5e
+  salt: 5f90a188468f64998c5d
+  email: testF@test.com
+  dm: false
+  roles: member
+  reviews_count: 1
+
+gurum:
+  id: 5
+  username: gurum
+  password: 088aac29e5ea1bfd8879eaf3b621bdd3d31f072e
+  salt: 5f90a188468f64998c5e
+  email: testG@test.com
+  dm: true
+  roles: member
+  reviews_count: 2
+
+nkakeya:
+  id: 6
+  username: nkakeya
+  password: c599f512c00d8bbb9fd883f28b9555213516f88e
+  salt: 5f90a188468f64998c5f
+  email: testG@test.com
+  dm: true
+  roles: manager,member
+  reviews_count: 0

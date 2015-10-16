@@ -1,0 +1,4 @@
+<%= form_for @search, url: { action: :keywd_process } do |f| %>
+  <%= f.text_field :keyword, size: 25 %>
+  <%= f.submit '검색' %>
+<% end %>

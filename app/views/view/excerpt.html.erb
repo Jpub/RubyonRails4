@@ -1,0 +1,7 @@
+<% msg = 'Rails는 Ruby로 만들어진 프레임워크입니다. Rails에 영향을 받은 프레임워크에는 Catalyst와 symfony 등이 있습니다.' %>
+
+<%= excerpt(msg, 'Catalyst', radius: 10) %><br />
+
+<%= excerpt(msg, 'Rails', radius: 10) %><br />
+
+<%= excerpt(msg, 'Catalyst', radius: 10, omission: '~' ) %>

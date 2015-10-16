@@ -1,0 +1,5 @@
+<%= form_tag(action: :session_rec) do %>
+  <%= label_tag :email, '메일 주소' %>:
+  <%= text_field_tag :email, @email, size: 50 %>
+  <%= submit_tag '저장' %>
+<% end %>

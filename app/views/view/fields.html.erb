@@ -1,0 +1,23 @@
+<%= form_for(@user, url: { action: :create }) do |f| %>
+  <div class="field">
+    <%= f.label :username, '사용자 이름' %><br />
+    <%= f.text_field :username %>
+  </div>
+  <div class="field">
+    <%= f.label :email, '메일 주소: ' %><br />
+    <%= f.text_field :email %>
+  </div>
+  <%= field_set_tag '저자 정보' do %>
+    <%= fields_for @user.author do |af| %>
+      <div class="field">
+        <%= af.label :name, '저자 이름: ' %><br />
+        <%= af.text_field :name %>
+      </div>
+      <div class="field">
+        <%= af.label :birth, '생일: ' %><br />
+        <%= af.text_field :birth %>
+      </div>
+    <% end %>
+  <% end %><br/>
+  <%= f.submit '등록' %>
+<% end %>

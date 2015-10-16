@@ -1,0 +1,33 @@
+<h1>Listing fan_comments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Author no</th>
+      <th>Name</th>
+      <th>Body</th>
+      <th>Deleted</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @fan_comments.each do |fan_comment| %>
+      <tr>
+        <td><%= fan_comment.author_no %></td>
+        <td><%= fan_comment.name %></td>
+        <td><%= fan_comment.body %></td>
+        <td><%= fan_comment.deleted %></td>
+        <td><%= link_to 'Show', fan_comment %></td>
+        <td><%= link_to 'Edit', edit_fan_comment_path(fan_comment) %></td>
+        <td><%= link_to 'Destroy', fan_comment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Fan comment', new_fan_comment_path %>

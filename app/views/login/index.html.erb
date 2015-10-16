@@ -1,0 +1,13 @@
+<p style="color: Red"><%= @error %></p>
+<%= form_tag action: :auth do %>
+  <div class="field">
+    <%= label_tag :username, '사용자 이름' %><br />
+    <%= text_field_tag :username, '', size: 20 %>
+  </div>
+  <div class="field">
+    <%= label_tag :password, '비밀번호' %><br />
+    <%= password_field_tag :password, '', size: 20 %>
+  </div>
+  <%= hidden_field_tag :referer, flash[:referer] %>
+  <%= submit_tag '로그인' %>
+<% end %>

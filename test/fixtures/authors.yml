@@ -1,0 +1,22 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+rint:
+  id: 1
+  user_id: 1
+  name: 윤인성
+  birth: 1991-12-09
+  address: 서울특별시 강서구
+
+hasrat:
+  id: 2
+  user_id: 2
+  name: 연하진
+  birth: 1991-02-14
+  address: 서울특별시 강서구
+
+iana:
+  id: 3
+  user_id: 3
+  name: 김연화
+  birth: 1989-10-15
+  address: 서울특별시 마포구 

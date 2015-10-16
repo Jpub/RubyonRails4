@@ -1,0 +1,20 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  name: 윤인성
+  email: testA@test.com
+  lock_version: 0
+
+two:
+  id: 2
+  name: 연하진
+  email: testB@test.com
+  lock_version: 0
+
+
+three:
+  id: 3
+  name: 김연화
+  email: testH@test.com
+  lock_version: 0

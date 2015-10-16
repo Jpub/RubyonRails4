@@ -1,0 +1,5 @@
+<%= form_for(@review) do |f| %>
+  리뷰 대상 도서ㅏ: 
+  <%= f.grouped_collection_select :book_id, @authors, :books, :name, :id, :title %>
+
+<% end %>

@@ -1,0 +1,31 @@
+<%= form_for(@book, url: book_path(@book),
+  html: { id: :edit_book, class: :edit_book_1,
+  method: :patch }) do |f| %>
+  <div class="field">
+    <%= f.label :isbn %><br />
+    <%= f.text_field :isbn, size: 25 %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title, size: 25 %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br />
+    <%= f.text_field :price, size: 25 %>
+  </div>
+  <div class="field">
+    <%= f.label :publish %><br />
+    <%= f.text_field :publish, size: 25 %>
+  </div>
+  <div class="field">
+    <%= f.label :published %><br />
+    <%= f.text_field :published, size: 25 %>
+  </div>
+  <div class="field">
+    <%= f.label :cd %><br />
+    <%= f.text_field :cd, size: 25 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

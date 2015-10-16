@@ -1,0 +1,13 @@
+<ul>
+<li>사용자 이름: <%= @user.username %></li>
+<li>메일 주소: <%= @user.email %></li>
+<% unless @user.books.empty? %>
+<li>리뷰했던 도서: 
+  <ul>
+    <% @user.books.each do |book| %>
+      <li><%= book.title %></li>
+    <% end %>
+  </ul>
+</li>
+<% end %>
+</ul>

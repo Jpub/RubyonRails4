@@ -1,0 +1,28 @@
+<%= form_for(@book) do |f| %>
+  색 선택 박스: 
+  <%= f.color_field :isbn %><br />
+  날짜 입력 박스: 
+  <%= f.date_field :published %><br />
+  시간 입력 박스: 
+  <%= f.time_field :published %><br />
+  날짜 시간 입력 박스: 
+  <%= f.datetime_field :published %><br />
+  날짜 시간 입력 박스(로컬): 
+  <%= f.datetime_local_field :published %><br />
+  월 입력 박스: 
+  <%= f.month_field :published %><br />
+  주 입력 박스: 
+  <%= f.week_field :published %><br />
+  메일 입력 박스: 
+  <%= f.email_field :isbn, size: 25, maxlength: 30 %><br />
+  숫자 입력 박스: 
+  <%= f.number_field :price, min: 10, max: 10000, step: 10 %><br />
+  슬라이더: 
+  <%= f.range_field :price, min: 0, max: 10000 %><br />
+  검색 박스: 
+  <%= f.search_field :isbn, size: 10, maxlength: 15 %><br />
+  전화번호 입력 박스: 
+  <%= f.telephone_field :isbn, size: 15, maxlength: 20 %><br />
+  URL 입력 박스: 
+  <%= f.url_field :isbn, size: 10, maxlength: 15 %><br />
+<% end %>

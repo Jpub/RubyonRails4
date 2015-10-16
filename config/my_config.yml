@@ -1,0 +1,18 @@
+COMMON: &COMMON
+  author: "rint, Yoshihiro"
+  logo:
+    source: "http://www.wings.msn.to/image/wings.jpg"
+    width: 215
+    height: 67
+
+development:
+  hoge: "dev"
+  <<: *COMMON
+
+test:
+  hoge: "test"
+  <<: *COMMON
+
+production:
+  hoge: "pro"
+  <<: *COMMON

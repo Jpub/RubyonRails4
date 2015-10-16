@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+</head>
+<body> 
+<%= @user.username %>님
+<hr />
+<p>
+사이트에 사용자 등록해주셔서 감사드립니다.<br />
+다음은 등록해주신 정보입니다.
+</p>
+
+<ul>
+<li>사용자 이름: <%= @user.username %></li>
+<li>비밀번호: (보안을 위해 보이지 않습니다)</li>
+<li>메일 주소: <%= @user.email %></li>
+</ul>
+
+<p>사이트 이용을 위해 <%= link_to '여기', { host: 'www.example.com', controller: :books, action: :index } %>에서 로그인해주세요. </p>
+
+<%#= url_for(host: 'www.example.com', controller: :books,
+  action: :index, only_path: false) %>
+
+<hr />
+<%= mail_to 'webmaster@wings.msn.to', '서버 사이드 기술 배움터' %>
+<%= image_tag 'http://www.wings.msn.to/image/wings.jpg', size: '53x17' %>
+<%#= image_tag attachments['wings.jpg'].url, size: '53x17' %>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<% cache(books_cache_key) do %>
+  <% Book.all.each do |book| %>
+    <p>
+      <%= render book %>
+    </p>
+  <% end %>
+<% end %>

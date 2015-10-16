@@ -1,0 +1,18 @@
+<%= form_for(@book) do |f| %>
+  텍스트 박스: 
+  <%= f.text_field :isbn, size: 20, maxlength: 25, readonly: true %><br />
+  비밀번호 박스: 
+  <%= f.password_field :isbn, size: 10, maxlength: 15, disabled: true %><br />
+  텍스트에리어: <br />
+  <%= f.text_area :isbn, cols: 40, rows: 10 %><br />
+  라디오 버튼: 
+  <label><%= f.radio_button :publish, '제이펍', class: :rd %> 제이펍</label>
+  <label><%= f.radio_button :publish, '한빛미디어', class: :rd %> 한빛미디어</label>
+  <label><%= f.radio_button :publish, '한빛아카데미', class: :rd %> 한빛아카데미</label><br />
+  체크 박스: 
+  <label><%= f.check_box :cd, { class: 'chk'}, 'yes', 'no' %> CD 첨부 여부</label><br />
+  파일 입력 박스: 
+  <%= f.file_field :isbn, size: 10, maxlength: 15 %><br />
+  hidden 필드: 
+  <%= f.hidden_field :isbn %><br />
+<% end %>

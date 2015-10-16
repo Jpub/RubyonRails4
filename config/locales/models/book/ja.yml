@@ -1,0 +1,8 @@
+ja:
+  attributes:
+    isbn: "ISBN番号"
+    title: "이름"
+    price: "가격"
+    publish: "출판사"
+    published: "출간일"
+

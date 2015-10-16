@@ -1,0 +1,7 @@
+<h2>"<%= @book.title %>"의 저자 정보</h2>
+<hr />
+<ul>
+<% @book.authors.each do |author| %>
+  <li><%= author.name %>(<%= author.birth %>｜<%= author.address %>)</li>
+<% end %>
+</ul>

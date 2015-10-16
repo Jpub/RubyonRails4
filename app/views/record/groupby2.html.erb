@@ -1,0 +1,11 @@
+<table border="1">
+<tr>
+  <th>출판사</th><th>가격</th>
+</tr>
+<% @books.each do |key, value| %>
+<tr>
+  <td><%= key %></td>
+  <td><%= value %>원</td>
+</tr>
+<% end %>
+</table>

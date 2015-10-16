@@ -1,0 +1,37 @@
+<h1>Listing authors</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Name</th>
+      <th>Birth</th>
+      <th>Address</th>
+      <th>Ctype</th>
+      <th>Photo</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @authors.each do |author| %>
+      <tr>
+        <td><%= author.user %></td>
+        <td><%= author.name %></td>
+        <td><%= author.birth %></td>
+        <td><%= author.address %></td>
+        <td><%= author.ctype %></td>
+        <td><%= author.photo %></td>
+        <td><%= link_to 'Show', author %></td>
+        <td><%= link_to 'Edit', edit_author_path(author) %></td>
+        <td><%= link_to 'Destroy', author, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Author', new_author_path %>
